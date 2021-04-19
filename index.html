@@ -7,21 +7,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Корзина</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js" defer></script>
 </head>
 
 <body>
     <header>
         <div class="header__container">
             <p class="header__title">E-shop</p>
-            <button class="cart-button" type="button">Корзина</button>
+            <button class="cart-button" id="bucket__open-button" type="button">Корзина</button>
         </div>
     </header>
     <main>
         <div class="products">
 
         </div>
-    </main>
+        <div class="bucket__modal modal">
+            <button class="" id="bucket__close-button">X</button>
+        </div>
+        <div class="modal__overlay">
+
+        </div>
+
 </body>
+
+<script>
+    let openButton = document.querySelector("#bucket__open-button");
+    let closeButton = document.querySelector("#bucket__close-button");
+    let modal = document.querySelector(".modal");
+    let modalOverlay = document.querySelector(".modal__overlay");
+
+    openButton.addEventListener("click", function () {
+        modal.classList.add("open");
+        modalOverlay.classList.add("open");
+    })
+
+    closeButton.addEventListener("click", function () {
+        modal.classList.remove("open");
+        modalOverlay.classList.remove("open");
+    })
+</script>
+<script src="js/script.js" defer></script>
 
 </html>
