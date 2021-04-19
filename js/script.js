@@ -122,3 +122,4 @@ class BusketItem {
 }
 
 let list = new ProductsList();
+let busketList = new BusketList();
