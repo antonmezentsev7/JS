@@ -117,8 +117,6 @@ class BusketItem {
                 </div>
             </div>`
     }
-
-
 }
 
 let list = new ProductsList();
