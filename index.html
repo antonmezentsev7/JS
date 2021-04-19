@@ -21,6 +21,13 @@
 
         </div>
         <div class="bucket__modal modal">
+            <div class="busket__container">
+                
+            </div>
+            <div class="busket__counts">
+                <p class="amount">Итого:</p>
+                <p class="count">Всего товаров:</p>
+            </div>
             <button class="" id="bucket__close-button">X</button>
         </div>
         <div class="modal__overlay">
@@ -38,6 +45,7 @@
     openButton.addEventListener("click", function () {
         modal.classList.add("open");
         modalOverlay.classList.add("open");
+        let busketList = new BusketList();
     })
 
     closeButton.addEventListener("click", function () {
